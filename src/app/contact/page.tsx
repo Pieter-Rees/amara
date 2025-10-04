@@ -1,33 +1,21 @@
 import Navigation from '@/components/Navigation'
 import ContactSection from '@/components/ContactSection'
+import StandardHero from '@/components/StandardHero'
+import StandardSection from '@/components/StandardSection'
+import StandardFooter from '@/components/StandardFooter'
 
 export default function ContactPage() {
     return (
         <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
             <Navigation />
 
-            {/* Hero Section */}
-            <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-green-600 to-green-700 text-white">
-                <div className="max-w-7xl mx-auto text-center">
-                    <div className="mb-4">
-                        <a href="/" className="inline-flex items-center text-green-200 hover:text-white transition-colors">
-                            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                            </svg>
-                            Terug naar Home
-                        </a>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                        Contact
-                    </h1>
-                    <p className="text-xl md:text-2xl mb-8">
-                        Neem contact op of kom langs bij de Amara Hoeve
-                    </p>
-                </div>
-            </section>
+            <StandardHero
+                title="Contact"
+                subtitle="Neem contact op of kom langs bij de Amara Hoeve"
+            />
 
             {/* Contact Information & Map Section */}
-            <section className="py-16 bg-white">
+            <StandardSection>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12">
                         {/* Contact Information */}
@@ -66,7 +54,7 @@ export default function ContactPage() {
                                             <h3 className="text-xl font-semibold text-blue-800 mb-2">Email</h3>
                                             <p className="text-lg text-gray-700">
                                                 <a href="mailto:pieter@amarahoeve.nl" className="hover:text-blue-600 transition-colors">
-                                                    [email protected]
+                                                    pieter@amarahoeve.nl
                                                 </a>
                                             </p>
                                             <p className="text-sm text-gray-600 mt-2">Stuur een bericht voor vragen</p>
@@ -136,10 +124,10 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </StandardSection>
 
             {/* Additional Contact Information */}
-            <section className="py-16 bg-green-50">
+            <StandardSection bgColor="green-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Reserveer Nu!</h2>
@@ -186,10 +174,10 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </StandardSection>
 
             {/* FAQ Section */}
-            <section className="py-16 bg-white">
+            <StandardSection>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Veelgestelde Vragen</h2>
@@ -227,18 +215,13 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </StandardSection>
 
-            <ContactSection />
+            <StandardSection>
+                <ContactSection />
+            </StandardSection>
 
-            {/* Footer */}
-            <footer className="bg-gray-900 text-white py-8">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="text-lg mb-2">Kom jezelf VERWONDEREN...</p>
-                    <p className="text-sm text-gray-400">Back in Blissness</p>
-                    <p className="text-sm text-gray-500 mt-4">© 2024 Amara Hoeve. Alle rechten voorbehouden.</p>
-                </div>
-            </footer>
+            <StandardFooter />
         </div>
     )
 }

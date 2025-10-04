@@ -58,3 +58,4 @@ const imagePath = "/images/gallery/camping-1.jpg"
 - Compress images before adding them
 - Use tools like TinyPNG or ImageOptim
 - Consider using Next.js Image component for automatic optimization
+

@@ -80,3 +80,4 @@ Example:
 - **Images not loading?** Check the file path and make sure the image is in the correct directory
 - **Images too large?** Optimize them using the tools mentioned above
 - **Wrong aspect ratio?** Resize images to 800x600px for gallery images
+

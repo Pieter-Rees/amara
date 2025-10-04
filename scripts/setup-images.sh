@@ -33,3 +33,4 @@ echo "3. Optimize images to 800x600px for gallery"
 echo "4. Run 'npm run dev' to test your images"
 echo ""
 echo "🎉 Ready to add your Amara Hoeve images!"
+
